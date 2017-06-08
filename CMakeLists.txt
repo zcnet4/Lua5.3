@@ -11,6 +11,9 @@ set(my_target "lua5.3")
 set(TARGET ${my_target})
 set(TOOLSET "target")
 
+set(LUA53_INCLUDE_DIRS ${CMAKE_CURRENT_LIST_DIR}/include CACHE INTERNAL "lua5.3 include dir")
+message("LUA53_INCLUDE_DIRS= ${LUA53_INCLUDE_DIRS}")
+
 list(APPEND my_srcs
   src/lapi.c
 src/lapi.h
